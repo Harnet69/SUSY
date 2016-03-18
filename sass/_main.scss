@@ -1,0 +1,39 @@
+$susy: (
+	columns: 15,
+	gutters: 1/20,
+);
+ 
+ body{
+ 	@include container;
+	@include clearfix;
+	width: 80%;
+	background: #FDDE03;
+	header{
+		@include span (12);
+		@include clearfix;
+		height: 150px;
+			background: url(../img/logo_sm.png) no-repeat; 
+			h1{
+			color: red;
+			background-color: green;
+			@include span (9 at 4 of 12);
+			text-align: center;
+		}
+			
+	}
+	aside{
+		@include span(3);
+		background: silver;
+		ul{
+			list-style: none;
+		}
+	}
+	main{
+		@include span(9 at 4);
+		background: grey;
+	}
+	footer{
+		@include span(12);
+		background: blue;
+	}
+}
