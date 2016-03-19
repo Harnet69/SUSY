@@ -1,8 +1,8 @@
-/*$susy: (
+$susy: (
 	columns: 12,
-	gutters: 1/4,
+	gutters:1/20
 );
- */
+
 body{
  	@include container;
 	@include clearfix;
@@ -10,31 +10,55 @@ body{
 	background: #FDDE03;
 	
 	header{
-		@include span(12 of 12);
+		@include span(12);
 		@include clearfix;
 		background-color: green;
 		height: 150px;
 		div{
-			@include span(3 of 12);
+			@include span(4);
 		}
 		h1{
-			@include span(8 at 4 of 12);
-			text-align: center;
+			@include span(8 at 5);
+			//padding-left:30%;
 		}	
 	}	
+	content{
+		@include span(12);
+		@include clearfix;
 		aside{
-		@include span(4 of 12);
-		background: silver;
-		ul{
-			list-style: none;
+			@include span(4);
+			background: silver;
+			ul{
+				list-style: none;
+			}
+		}
+		main{
+			@include span(8 at 5);
+			background: grey;
 		}
 	}
-	main{
-		@include span(8 at 5 of 12);
-		background: grey;
-	}
 	footer{
-		@include span(12 of 12);
+		@include span(12);
 		background: blue;
+	}
+}
+@include breakpoint(500px){
+	aside2{
+		@include span(4);
+	}
+	main2{
+		@include span(8 at 5);
+	}
+}
+@include breakpoint(1000px){
+	@include layout(24);
+	aside2{
+		@include span(4);
+	}
+	main2{
+		@include span(20 at 5);
+			.col1, .col2, .col3, .col4{
+				@include span (4 of 20);
+			}
 	}
 }

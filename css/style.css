@@ -432,11 +432,6 @@ optgroup {
   font-weight: bold;
 }
 
-/*$susy: (
-	columns: 12,
-	gutters: 1/4,
-);
- */
 /* line 6, ../sass/_main.scss */
 body {
   max-width: 100%;
@@ -466,40 +461,85 @@ body header {
 }
 /* line 17, ../sass/_main.scss */
 body header div {
-  width: 23.72881%;
+  width: 33.06773%;
   float: left;
-  margin-right: 1.69492%;
+  margin-right: 0.39841%;
 }
 /* line 20, ../sass/_main.scss */
 body header h1 {
-  width: 66.10169%;
-  float: left;
-  margin-right: 1.69492%;
-  text-align: center;
+  width: 66.53386%;
+  float: right;
+  margin-right: 0;
 }
 /* line 25, ../sass/_main.scss */
-body aside {
-  width: 32.20339%;
+body content {
+  width: 100%;
   float: left;
-  margin-right: 1.69492%;
-  background: silver;
+  margin-left: 0;
+  margin-right: 0;
+  overflow: hidden;
+  *zoom: 1;
 }
 /* line 28, ../sass/_main.scss */
-body aside ul {
+body content aside {
+  width: 33.06773%;
+  float: left;
+  margin-right: 0.39841%;
+  background: silver;
+}
+/* line 31, ../sass/_main.scss */
+body content aside ul {
   list-style: none;
 }
-/* line 32, ../sass/_main.scss */
-body main {
-  width: 66.10169%;
+/* line 35, ../sass/_main.scss */
+body content main {
+  width: 66.53386%;
   float: right;
   margin-right: 0;
   background: grey;
 }
-/* line 36, ../sass/_main.scss */
+/* line 40, ../sass/_main.scss */
 body footer {
   width: 100%;
   float: left;
   margin-left: 0;
   margin-right: 0;
   background: blue;
+}
+
+@media (min-width: 500px) {
+  /* line 46, ../sass/_main.scss */
+  aside2 {
+    width: 33.06773%;
+    float: left;
+    margin-right: 0.39841%;
+  }
+
+  /* line 49, ../sass/_main.scss */
+  main2 {
+    width: 66.53386%;
+    float: right;
+    margin-right: 0;
+  }
+}
+@media (min-width: 1000px) {
+  /* line 55, ../sass/_main.scss */
+  aside2 {
+    width: 16.50099%;
+    float: left;
+    margin-right: 0.19881%;
+  }
+
+  /* line 58, ../sass/_main.scss */
+  main2 {
+    width: 83.3002%;
+    float: right;
+    margin-right: 0;
+  }
+  /* line 60, ../sass/_main.scss */
+  main2 .col1, main2 .col2, main2 .col3, main2 .col4 {
+    width: 19.80907%;
+    float: left;
+    margin-right: 0.23866%;
+  }
 }
