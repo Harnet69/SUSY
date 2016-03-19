@@ -432,6 +432,11 @@ optgroup {
   font-weight: bold;
 }
 
+/*$susy: (
+	columns: 12,
+	gutters: 1/4,
+);
+ */
 /* line 6, ../sass/_main.scss */
 body {
   max-width: 100%;
@@ -448,47 +453,53 @@ body:after {
   display: block;
   clear: both;
 }
-/* line 11, ../sass/_main.scss */
+/* line 12, ../sass/_main.scss */
 body header {
-  width: 79.93631%;
+  width: 100%;
   float: left;
-  margin-right: 0.31847%;
+  margin-left: 0;
+  margin-right: 0;
   overflow: hidden;
   *zoom: 1;
-  height: 150px;
-  background: url(../img/logo_sm.png) no-repeat;
-}
-/* line 16, ../sass/_main.scss */
-body header h1 {
-  color: red;
   background-color: green;
-  width: 74.9004%;
-  float: right;
-  margin-right: 0;
+  height: 150px;
+}
+/* line 17, ../sass/_main.scss */
+body header div {
+  width: 23.72881%;
+  float: left;
+  margin-right: 1.69492%;
+}
+/* line 20, ../sass/_main.scss */
+body header h1 {
+  width: 66.10169%;
+  float: left;
+  margin-right: 1.69492%;
   text-align: center;
 }
-/* line 24, ../sass/_main.scss */
+/* line 25, ../sass/_main.scss */
 body aside {
-  width: 19.74522%;
+  width: 32.20339%;
   float: left;
-  margin-right: 0.31847%;
+  margin-right: 1.69492%;
   background: silver;
 }
-/* line 27, ../sass/_main.scss */
+/* line 28, ../sass/_main.scss */
 body aside ul {
   list-style: none;
 }
-/* line 31, ../sass/_main.scss */
+/* line 32, ../sass/_main.scss */
 body main {
-  width: 59.87261%;
-  float: left;
-  margin-right: 0.31847%;
+  width: 66.10169%;
+  float: right;
+  margin-right: 0;
   background: grey;
 }
-/* line 35, ../sass/_main.scss */
+/* line 36, ../sass/_main.scss */
 body footer {
-  width: 79.93631%;
+  width: 100%;
   float: left;
-  margin-right: 0.31847%;
+  margin-left: 0;
+  margin-right: 0;
   background: blue;
 }
