@@ -433,6 +433,11 @@ optgroup {
 }
 
 /* line 6, ../sass/_main.scss */
+p {
+  border: 1px solid red;
+}
+
+/* line 9, ../sass/_main.scss */
 body {
   max-width: 100%;
   margin-left: auto;
@@ -448,98 +453,153 @@ body:after {
   display: block;
   clear: both;
 }
-/* line 12, ../sass/_main.scss */
+/* line 15, ../sass/_main.scss */
 body header {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
   width: 100%;
   float: left;
-  margin-left: 0;
-  margin-right: 0;
+  padding-left: 0.83333%;
+  padding-right: 0.83333%;
   overflow: hidden;
   *zoom: 1;
   background-color: green;
   height: 150px;
 }
-/* line 17, ../sass/_main.scss */
-body header div {
-  width: 33.06773%;
-  float: left;
-  margin-right: 0.39841%;
-}
 /* line 20, ../sass/_main.scss */
-body header h1 {
-  width: 66.53386%;
-  float: right;
-  margin-right: 0;
+body header div {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 33.33333%;
+  float: left;
+  padding-left: 0.83333%;
+  padding-right: 0.83333%;
 }
-/* line 25, ../sass/_main.scss */
+/* line 23, ../sass/_main.scss */
+body header h1 {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 66.66667%;
+  float: right;
+  padding-left: 0.83333%;
+  padding-right: 0.83333%;
+}
+/* line 28, ../sass/_main.scss */
 body content {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
   width: 100%;
   float: left;
-  margin-left: 0;
-  margin-right: 0;
+  padding-left: 0.83333%;
+  padding-right: 0.83333%;
   overflow: hidden;
   *zoom: 1;
 }
-/* line 28, ../sass/_main.scss */
+/* line 31, ../sass/_main.scss */
 body content aside {
-  width: 33.06773%;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 33.33333%;
   float: left;
-  margin-right: 0.39841%;
+  padding-left: 0.83333%;
+  padding-right: 0.83333%;
   background: silver;
 }
-/* line 31, ../sass/_main.scss */
+/* line 34, ../sass/_main.scss */
 body content aside ul {
   list-style: none;
 }
-/* line 35, ../sass/_main.scss */
+/* line 38, ../sass/_main.scss */
 body content main {
-  width: 66.53386%;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 66.66667%;
   float: right;
-  margin-right: 0;
+  padding-left: 0.83333%;
+  padding-right: 0.83333%;
   background: grey;
 }
-/* line 40, ../sass/_main.scss */
+/* line 43, ../sass/_main.scss */
 body footer {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
   width: 100%;
   float: left;
-  margin-left: 0;
-  margin-right: 0;
+  padding-left: 0.83333%;
+  padding-right: 0.83333%;
   background: blue;
 }
 
 @media (min-width: 500px) {
-  /* line 46, ../sass/_main.scss */
+  /* line 49, ../sass/_main.scss */
   aside2 {
-    width: 33.06773%;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 33.33333%;
     float: left;
-    margin-right: 0.39841%;
+    padding-left: 0.83333%;
+    padding-right: 0.83333%;
   }
 
-  /* line 49, ../sass/_main.scss */
+  /* line 52, ../sass/_main.scss */
   main2 {
-    width: 66.53386%;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 66.66667%;
     float: right;
-    margin-right: 0;
+    padding-left: 0.83333%;
+    padding-right: 0.83333%;
   }
 }
 @media (min-width: 1000px) {
-  /* line 55, ../sass/_main.scss */
+  /* line 58, ../sass/_main.scss */
   aside2 {
-    width: 16.50099%;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 16.66667%;
     float: left;
-    margin-right: 0.19881%;
+    padding-left: 0.41667%;
+    padding-right: 0.41667%;
   }
 
-  /* line 58, ../sass/_main.scss */
+  /* line 61, ../sass/_main.scss */
   main2 {
-    width: 83.3002%;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 83.33333%;
     float: right;
-    margin-right: 0;
+    padding-left: 0.41667%;
+    padding-right: 0.41667%;
   }
-  /* line 60, ../sass/_main.scss */
-  main2 .col1, main2 .col2, main2 .col3, main2 .col4 {
-    width: 19.80907%;
+  /* line 63, ../sass/_main.scss */
+  main2 .col1, main2 .col2, main2 .col3 {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 25%;
     float: left;
-    margin-right: 0.23866%;
+    padding-left: 0.5%;
+    padding-right: 0.5%;
+  }
+  /* line 66, ../sass/_main.scss */
+  main2 .col4 {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 25%;
+    float: right;
+    padding-left: 0.5%;
+    padding-right: 0.5%;
   }
 }
