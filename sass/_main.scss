@@ -6,12 +6,91 @@ $susy: (
 p{
 	border: 1px solid red;
 }
+ul{
+	list-style: none;
+}
+$small: 400px;
+$medium: 700px;
+$large: 960px;
+
 body{
- 	@include container;
+	@include container(80%);
 	@include clearfix;
-	width: 80%;
+	background-color: silver;
+	header{
+		@include span(12);
+		background-color: yellow;
+		border: 1px solid red;
+		div{
+			@include span(4);
+		}
+		h1{
+			color: green;
+			@include span(8 at 4 of last);
+			text-align: center;
+			line-height: 3;
+			
+		}
+	}
+	content{
+		@include span(12);
+		border: 1px solid red;
+		background-color: gray;
+		@include breakpoint(500px){
+		aside{
+			@include span(4);
+			border: 1px solid red;
+		}
+		main{
+			@include span(8 at 5 of last);
+			border: 1px solid red;	
+		}
+		}
+				@include breakpoint(1000px){
+				@include layout(26);
+		aside{
+			@include span(6);
+			border: 1px solid green;
+		}
+		main{
+			@include span(20);
+			border: 2px solid green;
+				p{
+			border: 1px solid green;}
+			}
+			.p1, .p2, .p3, .p4{
+				@include span(5 of 20);
+			}
+		}
+	}
+	footer{
+		//@include span(12);
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*body{
+ 	@include container(80%);
+	@include clearfix;
 	background: #FDDE03;
-	
 	header{
 		@include span(12);
 		@include clearfix;
@@ -25,9 +104,9 @@ body{
 			//padding-left:30%;
 		}	
 	}	
+	@include breakpoint($medium){
 	content{
 		@include span(12);
-		@include clearfix;
 		aside{
 			@include span(4);
 			background: silver;
@@ -40,21 +119,9 @@ body{
 			background: grey;
 		}
 	}
-	footer{
-		@include span(12);
-		background: blue;
 	}
-}
-@include breakpoint(500px){
-	aside2{
-		@include span(4);
-	}
-	main2{
-		@include span(8 at 5);
-	}
-}
-@include breakpoint(1000px){
-	@include layout(24);
+	@include breakpoint($large){
+		@include layout(24);
 	aside2{
 		@include span(4);
 	}
@@ -67,4 +134,24 @@ body{
 		 @include span (5 at 16 of 20);
 		 }
 	}
+	}
 }
+@include breakpoint($small){
+	aside2{
+		@include span(4);
+	}
+	main2{
+		@include span(8 at 5);
+	}
+	footer{		
+	background: blue;
+				@include clearfix;
+		@include span(24);
+
+
+	}
+}
+*/
+
+	
+	
