@@ -36,21 +36,25 @@ body{
 		@include span(12);
 		border: 1px solid red;
 		background-color: gray;
-		@include breakpoint(500px){
+
 		aside{
+		@include breakpoint(500px);
 			@include span(4);
 			border: 1px solid red;
 		}
 		main{
+		@include breakpoint(500px);
 			@include span(8 at 5 of last);
 			border: 1px solid red;	
 		}
-		}
-				@include breakpoint(1000px){
-				@include layout(26);
+
+				@include susy-breakpoint(1000px, 26){
 		aside{
 			@include span(6);
 			border: 1px solid green;
+			li{
+				@include bleed-x(30px 5px);
+			}
 		}
 		main{
 			@include span(20);
@@ -63,8 +67,14 @@ body{
 			}
 		}
 	}
+.gallery img{
+	@include gallery(6 of 12);
+	@include breakpoint(1000px){
+		@include gallery(3 of 12);
+	}
+}
 	footer{
-		//@include span(12);
+		@include span(12);
 	}
 }
 

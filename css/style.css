@@ -504,32 +504,30 @@ body content {
   border: 1px solid red;
   background-color: gray;
 }
-@media (min-width: 500px) {
-  /* line 40, ../sass/_main.scss */
-  body content aside {
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-    width: 33.33333%;
-    float: left;
-    padding-left: 0.83333%;
-    padding-right: 0.83333%;
-    border: 1px solid red;
-  }
-  /* line 44, ../sass/_main.scss */
-  body content main {
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-    width: 66.66667%;
-    float: right;
-    padding-left: 0.83333%;
-    padding-right: 0.83333%;
-    border: 1px solid red;
-  }
+/* line 40, ../sass/_main.scss */
+body content aside {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 33.33333%;
+  float: left;
+  padding-left: 0.83333%;
+  padding-right: 0.83333%;
+  border: 1px solid red;
+}
+/* line 45, ../sass/_main.scss */
+body content main {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 66.66667%;
+  float: right;
+  padding-left: 0.83333%;
+  padding-right: 0.83333%;
+  border: 1px solid red;
 }
 @media (min-width: 1000px) {
-  /* line 51, ../sass/_main.scss */
+  /* line 52, ../sass/_main.scss */
   body content aside {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -541,6 +539,13 @@ body content {
     border: 1px solid green;
   }
   /* line 55, ../sass/_main.scss */
+  body content aside li {
+    margin-right: -5px;
+    margin-left: -30px;
+    padding-right: 5px;
+    padding-left: 30px;
+  }
+  /* line 59, ../sass/_main.scss */
   body content main {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -551,11 +556,11 @@ body content {
     padding-right: 0.38462%;
     border: 2px solid green;
   }
-  /* line 58, ../sass/_main.scss */
+  /* line 62, ../sass/_main.scss */
   body content main p {
     border: 1px solid green;
   }
-  /* line 61, ../sass/_main.scss */
+  /* line 65, ../sass/_main.scss */
   body content .p1, body content .p2, body content .p3, body content .p4 {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -565,6 +570,74 @@ body content {
     padding-left: 0.5%;
     padding-right: 0.5%;
   }
+}
+/* line 70, ../sass/_main.scss */
+body .gallery img {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 50%;
+  float: left;
+  padding-left: 0.83333%;
+  padding-right: 0.83333%;
+}
+/* line 66, C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/susy-2.2.12/sass/susy/language/susy/_gallery.scss */
+body .gallery img:nth-child(2n + 1) {
+  margin-left: 0;
+  margin-right: -100%;
+  clear: both;
+}
+/* line 66, C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/susy-2.2.12/sass/susy/language/susy/_gallery.scss */
+body .gallery img:nth-child(2n + 2) {
+  margin-left: 50%;
+  margin-right: -100%;
+  clear: none;
+}
+@media (min-width: 1000px) {
+  /* line 70, ../sass/_main.scss */
+  body .gallery img {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 25%;
+    float: left;
+    padding-left: 0.83333%;
+    padding-right: 0.83333%;
+  }
+  /* line 66, C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/susy-2.2.12/sass/susy/language/susy/_gallery.scss */
+  body .gallery img:nth-child(4n + 1) {
+    margin-left: 0;
+    margin-right: -100%;
+    clear: both;
+  }
+  /* line 66, C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/susy-2.2.12/sass/susy/language/susy/_gallery.scss */
+  body .gallery img:nth-child(4n + 2) {
+    margin-left: 25%;
+    margin-right: -100%;
+    clear: none;
+  }
+  /* line 66, C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/susy-2.2.12/sass/susy/language/susy/_gallery.scss */
+  body .gallery img:nth-child(4n + 3) {
+    margin-left: 50%;
+    margin-right: -100%;
+    clear: none;
+  }
+  /* line 66, C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/susy-2.2.12/sass/susy/language/susy/_gallery.scss */
+  body .gallery img:nth-child(4n + 4) {
+    margin-left: 75%;
+    margin-right: -100%;
+    clear: none;
+  }
+}
+/* line 76, ../sass/_main.scss */
+body footer {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 100%;
+  float: left;
+  padding-left: 0.83333%;
+  padding-right: 0.83333%;
 }
 
 /*body{
